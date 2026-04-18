@@ -73,7 +73,7 @@ void Insert_middle(){
         temp=start;
         while(i<pos){
             i++;
-            temp=temp->add;                      ////// 1 2 3   4 5
+            temp=temp->add;                      ////// 1 2 31   4 5
         }
         newone= (struct node*)malloc(sizeof(struct node));
         cout<<"Enter the element you want to add::"<<endl;
@@ -125,8 +125,8 @@ void Delete_middle(){
         int n;cin>>n;
         int i=1;
         temp=start;
-        struct node *prev=NULL;                                                                                            /// 1 2 3 4 5
-        while(i<n){
+        struct node *prev=NULL;                                                                                            /// 1 2   3   4 5
+        while(i<n){                                                                                                                      
             prev=temp;
             temp=temp->add;
             i++;
@@ -191,4 +191,3 @@ int main(){
 
     return 0;
 }
-
