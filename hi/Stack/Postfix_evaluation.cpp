@@ -77,4 +77,8 @@ int main(){
    cout<<"Final ans: "<<stk[top]<<endl;
 
     return 0;
-}
+}eval $(ssh-agent -s)
+
+ssh-keygen -t rsa -b 4096 -C "your@email.com"
+
+ssh-add ~/.ssh/id_rsa
