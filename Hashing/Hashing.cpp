@@ -101,7 +101,9 @@ void Chaining_Search(vector<vector<int>>& hashTable, int value) {
 }
 
 int main(){
-    
+    string str="1101";
+    int a = stoi(str);
+    cout<<a<<endl;
     vector<int> data = {54, 26, 93, 17, 77, 31, 44, 55, 20};
     vector<int>hashTable(tablesize,-1); /// i am declearing the size of hash table 11.
     vector<vector<int>> HASHTABLE(tablesize); // vector of vectors
