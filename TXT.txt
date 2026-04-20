@@ -10,3 +10,10 @@ ssh-add ~/.ssh/id_rsa
 
 
 ssh-keygen -t ed25519 -C "tanzimislam1212@gmail.com"
+
+
+
+
+
+
+ssh -T git@github.com        --------> for check ssh key
