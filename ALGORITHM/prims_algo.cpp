@@ -34,7 +34,7 @@ int prims(int n){
 int solve() {
 
     int n,m;cin>>n>>m;
-    adj.resize(n+1);
+    adj.resize(n+1,{});
     for(int i=0;i<m;i++){
         int u,v,w;cin>>u>>v>>w;
         adj[u].push_back({v,w});
