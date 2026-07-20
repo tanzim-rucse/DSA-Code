@@ -11,10 +11,11 @@ using namespace std;
 
 struct edge{
     int u,v,w;
-    bool operator<(const edge & other)const{
-        return w<other.w;
-    }
+    
 };
+bool comp(edge a,edge b){
+    return a.w<b.w;
+}
 vector<int>rep;
 int find(int x){
     if(x==rep[x])return x;
@@ -25,7 +26,7 @@ int find(int x){
 
 vector<edge>Edges_vec;
 int MIST(int n){
-    sort(Edges_vec.begin(),Edges_vec.end());
+    sort(Edges_vec.begin(),Edges_vec.end(),comp);
     for(int i=1;i<=n;i++){
         rep[i]=i;
     }
